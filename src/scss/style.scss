@@ -74,6 +74,17 @@ body {
     background-color: #009bec;
     margin: 50px auto;
     border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: #008bd4;
+    }
+
+    &:active {
+      background-color: #007cbc;
+    }
   }
 }
 
