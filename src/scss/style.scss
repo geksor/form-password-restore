@@ -23,7 +23,7 @@ body {
     text-align: center;
     padding: 40px;
   }
-
+form {
   label {
     display: flex;
     flex-direction: column;
@@ -61,6 +61,7 @@ body {
     }
   }
 
+
   .change-button {
     width: 81px;
     height: 13px;
@@ -76,6 +77,8 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 
     &:hover,
     &:focus {
@@ -86,6 +89,7 @@ body {
       background-color: #007cbc;
     }
   }
+}
 }
 
 @media (max-width: 768px) {
