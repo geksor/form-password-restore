@@ -12,27 +12,31 @@
 <body>
 
   <div class="wrapper">
-    <img src="build/img/logo.png" alt="">
-    <form action="">
-      <label for="">
-        <p class="text-title">Введите новый пароль</p>
-        <!-- Класс для обязательного поля -->
-        <input type="text" name="" id="" class="required-field">
-        <!-- Класс для оформления ошибок -->
-        <!-- <p class="input-error">Недопустимые символы</p> -->
-      </label>
+    <img src="/build/img/logo.png" alt="">
 
-      <label for="">
-        <p class="text-title">Повторите новый пароль</p>
-        <input type="text" name="" id="">
-        <!-- Класс для оформления ошибок -->
-        <!-- <p class="input-error">Недопустимые символы</p> -->
-      </label>
+    <form id="reset-password-form" action="/reset-password?token=rgeM2Ph-4-p6Fz1-CSfw1x9kHmNqT9NQ_1557143951"
+      method="post">
+      <input type="hidden" name="_csrf-frontend"
+        value="AsrX7jZaV82Ca0B--or2uhBvww4axfq6sUDI1pPeHV5k--SgZSpgn-UjFDLCw7-OW1eAQ2mWyMPSCIC10qdYBA==">
+      <div class="form-group field-resetpasswordform-password required has-error">
+        <label class="control-label" for="resetpasswordform-password">Введите новый пароль</label>
+        <input type="password" id="resetpasswordform-password" class="form-control" name="ResetPasswordForm[password]"
+          autofocus="" aria-required="true" aria-invalid="true">
 
-      <input type="submit" value="Изменить" class="change-button">
+        <p class="help-block help-block-error">Необходимо заполнить «Введите новый пароль».</p>
+      </div>
+      <div class="form-group field-resetpasswordform-confirmpassword required has-error">
+        <label class="control-label" for="resetpasswordform-confirmpassword">Повторите новый пароль</label>
+        <input type="password" id="resetpasswordform-confirmpassword" class="form-control"
+          name="ResetPasswordForm[confirmPassword]" aria-required="true" aria-invalid="true">
+
+        <p class="help-block help-block-error">Необходимо заполнить «Повторите новый пароль».</p>
+      </div>
+      <button type="submit" class="change-button">Изменить</button>
     </form>
-
   </div>
+
+
 
 </body>
 
